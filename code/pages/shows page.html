@@ -1,0 +1,425 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>StreamVibe - Stranger Things</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+</head>
+
+<body class="movies-page">
+    <header>
+        <div class="container nav-wrap">
+            <a href="../index.html" class="logo">
+                <img src="../photo/logo.png" alt="StreamVibe Logo">
+                <span>StreamVibe</span>
+            </a>
+            <nav class="nav-menu">
+                <a href="../index.html">Home</a>
+                <a href="moves&shows.html" class="active">Movies & Shows</a>
+                <a href="Support.html">Support</a>
+                <a href="Subscription.html">Subscriptions</a>
+            </nav>
+            <div class="nav-icons">
+                <button class="icon-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="icon-btn" aria-label="Notifications">
+                    <svg viewBox="0 0 448 512" class="bell-icon"><path d="M224 0c-17.7 0-32 14.3-32 32V49.9C119.5 61.4 64 124.2 64 200v33.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V200c0-75.8-55.5-138.6-128-150.1V32c0-17.7-14.3-32-32-32zm0 96h8c57.4 0 104 46.6 104 104v33.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V200c0-57.4 46.6-104 104-104h8zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"></path></svg>
+                </button>
+                <button class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <nav class="mobile-menu" id="mobile-menu">
+            <a href="../index.html">Home</a>
+            <a href="moves&shows.html" class="active">Movies & Shows</a>
+            <a href="Support.html">Support</a>
+            <a href="Subscription.html">Subscriptions</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="movie-hero animate__animated animate__backInLeft">
+            <img class="hero-bg" src="../photo/stranger things.png" alt="Stranger Things">
+            <div class="movie-hero-content">
+                <h1>Stranger Things</h1>
+                <p class="hero-sub">When a young boy vanishes, a small town uncovers a mystery involving secret
+                    experiments, terrifying supernatural forces and one strange little girl.</p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary hero-play-btn">Play Now</button>
+                    <button class="hero-icon-btn" title="Add to list"><i class="fa-solid fa-plus"></i></button>
+                    <button class="hero-icon-btn" title="Like"><i class="fa-solid fa-thumbs-up"></i></button>
+                    <button class="hero-icon-btn" title="Sound"><i class="fa-solid fa-volume-high"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <div class="container animate__animated animate__backInRight delay-015">
+            <div class="detail-wrap">
+
+                <div>
+
+                    <div class="section-lbl">Seasons and Episodes</div>
+                    <div class="seasons-wrap">
+
+                        <div class="season-group open" id="season-02">
+                            <div class="season-header" onclick="toggleSeason('season-02')">
+                                <div class="season-header-left">
+                                    <span class="season-title">Season 02</span>
+                                    <span class="season-meta">9 Episodes</span>
+                                </div>
+                                <i class="fa-solid fa-chevron-down season-chevron"></i>
+                            </div>
+                            <div class="episodes-list">
+                                <div class="episode-item">
+                                    <span class="episode-num">E1</span>
+                                    <div class="episode-thumb">
+                                        <img src="../photo/1661846b68185ccd7111519121a1de55109d1e82.png" alt="Episode 1">
+                                        <div class="ep-play"><i class="fa-solid fa-play"></i></div>
+                                    </div>
+                                    <div class="episode-info">
+                                        <span class="episode-title">Chapter One: The Return to Hawkins</span>
+                                        <span class="episode-desc">After surviving the previous adventure, our heroes
+                                            must unite once more to confront the growing darkness threatening
+                                            Hawkins.</span>
+                                    </div>
+                                    <span class="episode-duration">50 min</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="episode-num">E2</span>
+                                    <div class="episode-thumb">
+                                        <img src="../photo/4d3358dc27aa0ebab579f94dfa3c9cb02dcaa90e.png" alt="Episode 2">
+                                        <div class="ep-play"><i class="fa-solid fa-play"></i></div>
+                                    </div>
+                                    <div class="episode-info">
+                                        <span class="episode-title">Chapter Two: Shadows in the Tunnel</span>
+                                        <span class="episode-desc">Eleven struggles to control her new abilities
+                                            while Mike and the group discover a hidden tunnel beneath the
+                                            town.</span>
+                                    </div>
+                                    <span class="episode-duration">48 min</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="episode-num">E3</span>
+                                    <div class="episode-thumb">
+                                        <img src="../photo/93be9b5359caded3b300131c22ca2a7bfddd584f.png" alt="Episode 3">
+                                        <div class="ep-play"><i class="fa-solid fa-play"></i></div>
+                                    </div>
+                                    <div class="episode-info">
+                                        <span class="episode-title">Chapter Three: Echoes Below</span>
+                                        <span class="episode-desc">Joyce and Hopper follow a trail of clues that leads
+                                            them deep into a conspiracy far larger than they imagined.</span>
+                                    </div>
+                                    <span class="episode-duration">52 min</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="episode-num">E4</span>
+                                    <div class="episode-thumb">
+                                        <img src="../photo/bafd7deec30117d7f3ae90c9f703efe35817cbc8.png" alt="Episode 4">
+                                        <div class="ep-play"><i class="fa-solid fa-play"></i></div>
+                                    </div>
+                                    <div class="episode-info">
+                                        <span class="episode-title">Chapter Four: The Phantom Ambition</span>
+                                        <span class="episode-desc">Dustin's new radio discovery sends the group racing
+                                            against time as the shadow monster closes in on Hawkins Lab.</span>
+                                    </div>
+                                    <span class="episode-duration">46 min</span>
+                                </div>
+                                <div class="episode-item">
+                                    <span class="episode-num">E5</span>
+                                    <div class="episode-thumb">
+                                        <img src="../photo/bbf004c01bb9f0f9dc2616088f1d1a153008cb7e.png" alt="Episode 5">
+                                        <div class="ep-play"><i class="fa-solid fa-play"></i></div>
+                                    </div>
+                                    <div class="episode-info">
+                                        <span class="episode-title">Chapter Five: Secrets in the Lab</span>
+                                        <span class="episode-desc">Madmax reveals a secret about the lab that changes
+                                            everything, while Billy pushes his sister to the breaking point.</span>
+                                    </div>
+                                    <span class="episode-duration">54 min</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="season-group" id="season-03">
+                            <div class="season-header" onclick="toggleSeason('season-03')">
+                                <div class="season-header-left">
+                                    <span class="season-title">Season 03</span>
+                                    <span class="season-meta">8 Episodes</span>
+                                </div>
+                                <i class="fa-solid fa-chevron-down season-chevron"></i>
+                            </div>
+                            <div class="episodes-list">
+                                <div class="episode-item">
+                                    <span class="episode-num">E1</span>
+                                    <div class="episode-thumb">
+                                        <img src="../photo/1661846b68185ccd7111519121a1de55109d1e82.png" alt="Episode 1">
+                                        <div class="ep-play"><i class="fa-solid fa-play"></i></div>
+                                    </div>
+                                    <div class="episode-info">
+                                        <span class="episode-title">Suzie, Do You Copy?</span>
+                                        <span class="episode-desc">Summer means hot days and late nights at the pool.
+                                            While the older teens enjoy the season, the younger kids fear that
+                                            Eleven's visions may spell doom.</span>
+                                    </div>
+                                    <span class="episode-duration">51 min</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="section-lbl">Description</div>
+                    <p class="detail-desc">When a young boy vanishes, a small town uncovers a mystery involving
+                        secret experiments, terrifying supernatural forces and one strange little girl. Set in the
+                        1980s, Stranger Things blends sci-fi thrills, heartfelt friendships, and a homage to classic
+                        adventure storytelling.</p>
+
+                    <div class="cast-header">
+                        <div class="section-lbl section-lbl-inline">Cast</div>
+                        <div class="cast-nav">
+                            <button class="icon-btn small-icon-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                            <button class="icon-btn small-icon-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="cast-row">
+                        <div class="cast-member">
+                            <img src="../photo/actor 1,1.png" alt="Millie">
+                            <span>Millie</span>
+                        </div>
+                        <div class="cast-member">
+                            <img src="../photo/actor2,1.png" alt="Finn">
+                            <span>Finn</span>
+                        </div>
+                        <div class="cast-member">
+                            <img src="../photo/actor3,1.png" alt="Gaten">
+                            <span>Gaten</span>
+                        </div>
+                        <div class="cast-member">
+                            <img src="../photo/actor4,1.png" alt="Caleb">
+                            <span>Caleb</span>
+                        </div>
+                        <div class="cast-member">
+                            <img src="../photo/actor5,1.png" alt="Noah">
+                            <span>Noah</span>
+                        </div>
+                        <div class="cast-member">
+                            <img src="../photo/actor6,1.png" alt="Sadie">
+                            <span>Sadie</span>
+                        </div>
+                        <div class="cast-member">
+                            <img src="../photo/actor7,1.png" alt="Natalia">
+                            <span>Natalia</span>
+                        </div>
+                        <div class="cast-member">
+                            <img src="../photo/actor8,1.png" alt="Dacre">
+                            <span>Dacre</span>
+                        </div>
+                    </div>
+
+                    <div class="reviews-header">
+                        <div class="section-lbl section-lbl-inline">Reviews</div>
+                        <button class="btn btn-secondary review-btn-sm">+ Add Your Review</button>
+                    </div>
+                    <div class="reviews-grid">
+                        <div class="review-card">
+                            <div class="review-top">
+                                <div>
+                                    <div class="review-author">Amita Roy</div>
+                                    <div class="review-from">From India</div>
+                                </div>
+                                <div class="review-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <span class="score">4.5</span>
+                                </div>
+                            </div>
+                            <p class="review-text">The show was recommended by a close friend, and it completely lived
+                                up to the hype. I watched it in one weekend and kept thinking about the story and
+                                performances long after it ended.</p>
+                        </div>
+                        <div class="review-card">
+                            <div class="review-top">
+                                <div>
+                                    <div class="review-author">Sietraj</div>
+                                    <div class="review-from">From India</div>
+                                </div>
+                                <div class="review-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span class="score">4.5</span>
+                                </div>
+                            </div>
+                            <p class="review-text">A gripping show that keeps you on the edge of your seat. The
+                                performances are outstanding and the storyline is both thrilling and deeply
+                                emotional.</p>
+                        </div>
+                    </div>
+                    <div class="review-pagination">
+                        <button class="icon-btn small-icon-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                        <div class="rdot active"></div>
+                        <div class="rdot"></div>
+                        <div class="rdot"></div>
+                        <button class="icon-btn small-icon-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+
+                </div>
+
+                <div class="detail-sidebar">
+
+                    <div class="sb-block">
+                        <div class="sb-label">Released Year</div>
+                        <div class="sb-value">2016</div>
+                    </div>
+
+                    <div class="sb-block">
+                        <div class="sb-label">Available Languages</div>
+                        <div class="chip-row">
+                            <span class="chip">English</span>
+                            <span class="chip">Hindi</span>
+                            <span class="chip">Tamil</span>
+                            <span class="chip">Telugu</span>
+                        </div>
+                    </div>
+
+                    <div class="sb-block">
+                        <div class="sb-label">Ratings</div>
+                        <div class="ratings-row">
+                            <div class="rating-src">
+                                <div class="rating-src-name">IMDb</div>
+                                <div class="stars-row">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <span class="score">4.5</span>
+                                </div>
+                            </div>
+                            <div class="rating-src">
+                                <div class="rating-src-name">StreamVibe</div>
+                                <div class="stars-row">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <span class="score">4.5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sb-block">
+                        <div class="sb-label">Genres</div>
+                        <div class="chip-row">
+                            <span class="chip genre">Sci-Fi</span>
+                            <span class="chip genre">Fantasy</span>
+                            <span class="chip genre">Sci-Fi TV Shows</span>
+                        </div>
+                    </div>
+
+                    <div class="sb-block">
+                        <div class="sb-label">Director</div>
+                        <div class="person-row">
+                            <img src="../photo/actor3,1.png" alt="Duffer Brothers">
+                            <div>
+                                <div class="person-name">Duffer Brothers</div>
+                                <div class="person-role">From USA</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sb-block">
+                        <div class="sb-label">Fans</div>
+                        <div class="fan-row">
+                            <div class="fan-stat">
+                                <span class="fan-count">1.2K</span>
+                                <span class="fan-label">Fans</span>
+                            </div>
+                            <div class="fan-stat">
+                                <span class="fan-count">12</span>
+                                <span class="fan-label">Shows</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sb-block">
+                        <div class="sb-label">Music</div>
+                        <div class="person-row">
+                            <img src="../photo/actor4,1.png" alt="Kyle Dixon">
+                            <div>
+                                <div class="person-name">Kyle Dixon</div>
+                                <div class="person-role">From USA</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <section class="cta trial-panorama animate__animated animate__backInLeft delay-03">
+            <div>
+                <h3>Start your free trial today!</h3>
+                <p>This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.</p>
+            </div>
+            <button class="btn btn-primary">Start a Free Trial</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-top">
+            <div>
+                <h6>Home</h6>
+                <a href="#">Categories</a><a href="#">Devices</a><a href="#">Pricing</a><a href="#">FAQ</a>
+            </div>
+            <div>
+                <h6>Movies</h6>
+                <a href="moves&shows.html">Movies & Shows</a><a href="#">Genres</a><a href="#">Trending</a>
+                <a href="#">New Release</a><a href="#">Popular</a>
+            </div>
+            <div>
+                <h6>Shows</h6>
+                <a href="shows page.html">Shows</a><a href="#">Genres</a><a href="#">Trending</a>
+                <a href="#">New Release</a><a href="#">Popular</a>
+            </div>
+            <div>
+                <h6>Support</h6>
+                <a href="Support.html">Contact Us</a>
+            </div>
+            <div>
+                <h6>Subscription</h6>
+                <a href="Subscription.html">Plans</a><a href="#">Features</a>
+            </div>
+            <div>
+                <h6>Connect With Us</h6>
+                <div class="socials">
+                    <a href="#"><img src="../photo/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="../photo/discord.svg" alt="Discord"></a>
+                    <a href="#"><img src="../photo/nstagram.svg" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy;2023 StreamVibe, All Rights Reserved</p>
+            <p>Terms of Use &nbsp;&nbsp; Privacy Policy &nbsp;&nbsp; Cookie Policy</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
+

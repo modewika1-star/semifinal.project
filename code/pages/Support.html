@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>StreamVibe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+</head>
+
+<body class="support-page">
+    <header>
+        <div class="container nav-wrap">
+            <a href="../index.html" class="logo">
+                <img src="../photo/logo.png" alt="StreamVibe Logo">
+                <span>StreamVibe</span>
+            </a>
+
+            <nav class="nav-menu">
+                <a href="../index.html">Home</a>
+                <a href="moves&shows.html">Movies & Shows</a>
+                <a href="Support.html" class="active">Support</a>
+                <a href="Subscription.html">Subscriptions</a>
+            </nav>
+
+            <div class="nav-icons">
+                <button class="icon-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="icon-btn" aria-label="Notifications">
+                    <svg viewBox="0 0 448 512" class="bell-icon"><path d="M224 0c-17.7 0-32 14.3-32 32V49.9C119.5 61.4 64 124.2 64 200v33.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V200c0-75.8-55.5-138.6-128-150.1V32c0-17.7-14.3-32-32-32zm0 96h8c57.4 0 104 46.6 104 104v33.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V200c0-57.4 46.6-104 104-104h8zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"></path></svg>
+                </button>
+                <button class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <nav class="mobile-menu" id="mobile-menu">
+            <a href="../index.html">Home</a>
+            <a href="moves&shows.html">Movies & Shows</a>
+            <a href="Support.html" class="active">Support</a>
+            <a href="Subscription.html">Subscriptions</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="support-hero animate__animated animate__backInLeft">
+            <h1>Welcome to our support page!</h1>
+            <p>We're here to help you with any problems you may be having with our product.</p>
+
+            <div class="support-hero-grid">
+                <div class="collage">
+                    <img src="../photo/film 1.png" alt="Support 1">
+                    <img src="../photo/film 2.png" alt="Support 2">
+                    <img src="../photo/film 3.png" alt="Support 3">
+                    <img src="../photo/film 4.png" alt="Support 4">
+                    <img src="../photo/film 5.png" alt="Support 5">
+                    <img src="../photo/film 6.png" alt="Support 6">
+                </div>
+
+                <div class="animate__animated animate__backInRight">
+                    <h2>Get in Touch</h2>
+                    <p class="card-meta">Fill out the form below and we'll get back to you as soon as possible.</p>
+
+                    <form class="panel">
+                        <div class="form-grid">
+                            <div>
+                                <label>First Name</label>
+                                <input class="input" type="text" placeholder="Enter First Name">
+                            </div>
+                            <div>
+                                <label>Last Name</label>
+                                <input class="input" type="text" placeholder="Enter Last Name">
+                            </div>
+                            <div class="email-phone-grid">
+                                <div>
+                                    <label>Email</label>
+                                    <input class="input" type="email" placeholder="Enter your Email">
+                                </div>
+                                <div>
+                                    <label>Phone Number</label>
+                                    <div class="phone-input-group">
+                                        <select class="input phone-select">
+                                            <option>+1</option>
+                                            <option>+20</option>
+                                            <option>+966</option>
+                                        </select>
+                                        <input class="input" type="text" placeholder="Phone">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-full">
+                                <label>Message</label>
+                                <textarea placeholder="Enter your Message"></textarea>
+                            </div>
+                            <div class="form-full checkbox-row">
+                                <input type="checkbox" id="terms">
+                                <label for="terms">I agree with Terms of Use and Privacy Policy</label>
+                            </div>
+                            <div class="form-full">
+                                <button type="button" class="btn btn-primary">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <section class="support-faq animate__animated animate__backInLeft delay-02">
+            <div class="section-head">
+                <div>
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Common questions and quick answers.</p>
+                </div>
+                <button class="btn btn-primary">Ask a Question</button>
+            </div>
+
+            <div class="faq-wrap support-faq">
+                <article class="faq-item active">
+                    <div class="faq-q">
+                        <span>01 &nbsp; What is StreamVibe?</span>
+                        <span>-</span>
+                    </div>
+                    <p class="faq-answer">StreamVibe is a streaming service that allows you to watch movies and shows on
+                        demand.</p>
+                </article>
+                <article class="faq-item">
+                    <div class="faq-q"><span>02 &nbsp; How much does it cost?</span><span>+</span></div>
+                    <p class="faq-answer">Plans start from $9.99/month.</p>
+                </article>
+                <article class="faq-item">
+                    <div class="faq-q"><span>03 &nbsp; What content is available?</span><span>+</span></div>
+                    <p class="faq-answer">Movies, TV Shows, Originals and more.</p>
+                </article>
+                <article class="faq-item">
+                    <div class="faq-q"><span>04 &nbsp; How can I watch?</span><span>+</span></div>
+                    <p class="faq-answer">Watch on mobile, TV, web and consoles.</p>
+                </article>
+                <article class="faq-item">
+                    <div class="faq-q"><span>05 &nbsp; How do I sign up?</span><span>+</span></div>
+                    <p class="faq-answer">Use the subscription page and choose your plan.</p>
+                </article>
+                <article class="faq-item">
+                    <div class="faq-q"><span>06 &nbsp; What is free trial?</span><span>+</span></div>
+                    <p class="faq-answer">7-day free trial available for new users.</p>
+                </article>
+                <article class="faq-item">
+                    <div class="faq-q"><span>07 &nbsp; How to contact support?</span><span>+</span></div>
+                    <p class="faq-answer">Use the Support page contact form.</p>
+                </article>
+                <article class="faq-item">
+                    <div class="faq-q"><span>08 &nbsp; Payment methods?</span><span>+</span></div>
+                    <p class="faq-answer">Cards and selected digital wallets are accepted.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="cta trial-panorama support-cta animate__animated animate__backInRight delay-03">
+            <div>
+                <h3>Start your free trial today!</h3>
+                <p>This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.</p>
+            </div>
+            <button class="btn btn-primary">Start a Free Trial</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-top">
+            <div>
+                <h6>Home</h6>
+                <a href="#">Categories</a>
+                <a href="#">Devices</a>
+                <a href="Subscription.html">Pricing</a>
+                <a href="#">FAQ</a>
+            </div>
+            <div>
+                <h6>Movies</h6>
+                <a href="./moves page.html">Movies Page</a>
+                <a href="#">Genres</a>
+                <a href="#">Trending</a>
+                <a href="#">New Release</a>
+                <a href="#">Popular</a>
+            </div>
+            <div>
+                <h6>Shows</h6>
+                <a href="shows page.html">Shows Page</a>
+                <a href="#">Genres</a>
+                <a href="#">Trending</a>
+                <a href="#">New Release</a>
+                <a href="#">Popular</a>
+            </div>
+            <div>
+                <h6>Support</h6>
+                <a href="Support.html">Contact Us</a>
+            </div>
+            <div>
+                <h6>Subscription</h6>
+                <a href="Subscription.html">Plans</a>
+                <a href="#">Features</a>
+            </div>
+            <div class="socials">
+                <a href="#"><img src="../photo/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="../photo/nstagram.svg" alt="Instagram"></a>
+                <a href="#"><img src="../photo/discord.svg" alt="Discord"></a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy;2023 StreamVibe, All Rights Reserved</p>
+            <p>Terms of Use &nbsp;&nbsp; Privacy Policy &nbsp;&nbsp; Cookie Policy</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
+

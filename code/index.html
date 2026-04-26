@@ -1,0 +1,323 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>StreamVibe - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+</head>
+
+<body class="home-page">
+    <header>
+        <div class="container nav-wrap">
+            <a href="index.html" class="logo">
+                <img src="./photo/logo.png" alt="StreamVibe Logo">
+                <span>StreamVibe</span>
+            </a>
+
+            <nav class="nav-menu">
+                <a href="index.html" class="active">Home</a>
+                <a href="./pages/moves&shows.html">Movies & Shows</a>
+                <a href="./pages/Support.html">Support</a>
+                <a href="./pages/Subscription.html">Subscriptions</a>
+            </nav>
+
+            <div class="nav-icons">
+                <button class="icon-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="icon-btn" aria-label="Notifications">
+                    <svg viewBox="0 0 448 512" class="bell-icon"><path d="M224 0c-17.7 0-32 14.3-32 32V49.9C119.5 61.4 64 124.2 64 200v33.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V200c0-75.8-55.5-138.6-128-150.1V32c0-17.7-14.3-32-32-32zm0 96h8c57.4 0 104 46.6 104 104v33.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V200c0-57.4 46.6-104 104-104h8zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"></path></svg>
+                </button>
+                <button class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <nav class="mobile-menu" id="mobile-menu">
+            <a href="index.html" class="active">Home</a>
+            <a href="./pages/moves&shows.html">Movies & Shows</a>
+            <a href="./pages/Support.html">Support</a>
+            <a href="./pages/Subscription.html">Subscriptions</a>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="hero home-hero animate__animated animate__backInLeft">
+            <img class="hero-bg" src="./photo/background2.png" alt="">
+            <div class="hero-content">
+                <span class="tag">Featured</span>
+                <h1>The Best Streaming Experience</h1>
+                <p>StreamVibe is the best streaming experience for watching your favorite movies and shows on demand,
+                    anytime, anywhere.</p>
+                <button class="btn btn-primary"><i class="fa-solid fa-play"></i> Start Watching Now</button>
+            </div>
+        </section>
+
+        <section class="animate__animated animate__backInRight delay-01">
+            <div class="section-head">
+                <div>
+                    <h2>Explore our wide variety of categories</h2>
+                    <p>Whether you're looking for comedy, drama, or documentary, we have it all.</p>
+                </div>
+                <div class="section-controls" aria-hidden="true">
+                    <button class="icon-btn small-icon-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="icon-btn small-icon-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <div class="cards-row home-categories">
+                <article class="card"><img class="poster" src="./photo/action.png" alt="Action">
+                    <div class="card-body">
+                        <h4 class="card-title">Action</h4>
+                    </div>
+                </article>
+                <article class="card"><img class="poster" src="./photo/adventure.png" alt="Adventure">
+                    <div class="card-body">
+                        <h4 class="card-title">Adventure</h4>
+                    </div>
+                </article>
+                <article class="card"><img class="poster" src="./photo/comedy.png" alt="Comedy">
+                    <div class="card-body">
+                        <h4 class="card-title">Comedy</h4>
+                    </div>
+                </article>
+                <article class="card"><img class="poster" src="./photo/drama.png" alt="Drama">
+                    <div class="card-body">
+                        <h4 class="card-title">Drama</h4>
+                    </div>
+                </article>
+                <article class="card"><img class="poster" src="./photo/horror.png" alt="Horror">
+                    <div class="card-body">
+                        <h4 class="card-title">Horror</h4>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="animate__animated animate__backInLeft delay-02">
+            <div class="section-head">
+                <div>
+                    <h2>We Provide you streaming experience across various devices.</h2>
+                    <p>Enjoy StreamVibe on smartphones, tablets, TVs, laptops, and game consoles.</p>
+                </div>
+            </div>
+            <div class="devices-grid home-devices">
+                <article class="device-card">
+                    <img src="./photo/phone icon.svg" alt="Smartphones">
+                    <h4>Smartphones</h4>
+                    <p>Android and iOS supported with best playback quality.</p>
+                </article>
+                <article class="device-card">
+                    <img src="./photo/tablet icon.svg" alt="Tablet">
+                    <h4>Tablet</h4>
+                    <p>Watch bigger and better with tablet optimized layouts.</p>
+                </article>
+                <article class="device-card">
+                    <img src="./photo/tv icone.svg" alt="Smart TV">
+                    <h4>Smart TV</h4>
+                    <p>Cinematic streaming from your couch in 4K supported devices.</p>
+                </article>
+                <article class="device-card">
+                    <img src="./photo/labtop icon.svg" alt="Laptops">
+                    <h4>Laptops</h4>
+                    <p>Enjoy in-browser streaming with smooth responsive controls.</p>
+                </article>
+                <article class="device-card">
+                    <img src="./photo/controlr icon.svg" alt="Gaming Consoles">
+                    <h4>Gaming Consoles</h4>
+                    <p>Stream directly from your favorite console ecosystem.</p>
+                </article>
+                <article class="device-card">
+                    <img src="./photo/vr icone.svg" alt="VR Headsets">
+                    <h4>VR Headsets</h4>
+                    <p>Get immersed in next-level spatial entertainment experience.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="home-faq animate__animated animate__backInRight delay-028">
+            <div class="section-head">
+                <div>
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Got questions? We have quick answers about streaming, devices, plans, and support.</p>
+                </div>
+                <button class="btn btn-primary">Ask a Question</button>
+            </div>
+
+            <div class="faq-wrap">
+                <article class="faq-item active">
+                    <div class="faq-q">
+                        <span>01 &nbsp; What is StreamVibe?</span>
+                        <span>-</span>
+                    </div>
+                    <p class="faq-answer">StreamVibe is a streaming service that lets you watch movies and shows on demand from any supported device.</p>
+                </article>
+                <article class="faq-item">
+                    <div class="faq-q"><span>02 &nbsp; How much does it cost?</span><span>+</span></div>
+                    <p class="faq-answer">Plans start at $9.99 per month, with yearly billing available for better value.</p>
+                </article>
+                <article class="faq-item">
+                    <div class="faq-q"><span>03 &nbsp; What devices are supported?</span><span>+</span></div>
+                    <p class="faq-answer">You can watch on phones, tablets, TVs, laptops, consoles, and more.</p>
+                </article>
+                <article class="faq-item">
+                    <div class="faq-q"><span>04 &nbsp; Can I cancel anytime?</span><span>+</span></div>
+                    <p class="faq-answer">Yes. You can manage or cancel your plan at any time without hidden fees.</p>
+                </article>
+                <article class="faq-item">
+                    <div class="faq-q"><span>05 &nbsp; How do I sign up?</span><span>+</span></div>
+                    <p class="faq-answer">Go to the Subscription page, choose your plan, and create an account to get started.</p>
+                </article>
+                <article class="faq-item">
+                    <div class="faq-q"><span>06 &nbsp; Is there a free trial?</span><span>+</span></div>
+                    <p class="faq-answer">Yes! New users get a 7-day free trial on any plan with no credit card required upfront.</p>
+                </article>
+                <article class="faq-item">
+                    <div class="faq-q"><span>07 &nbsp; What content is available?</span><span>+</span></div>
+                    <p class="faq-answer">Thousands of movies, TV shows, originals, and documentaries across all genres.</p>
+                </article>
+                <article class="faq-item">
+                    <div class="faq-q"><span>08 &nbsp; What payment methods are accepted?</span><span>+</span></div>
+                    <p class="faq-answer">We accept all major credit and debit cards as well as selected digital wallets.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="home-pricing animate__animated animate__backInLeft delay-034">
+            <div class="section-head">
+                <div>
+                    <h2>Choose the plan that's right for you</h2>
+                    <p>Join StreamVibe and choose a flexible subscription that matches how you watch.</p>
+                </div>
+                <div class="plan-toggle home-plan-toggle">
+                    <a class="active" href="#" onclick="showHomeMonthly(event)">Monthly</a>
+                    <a href="#" onclick="showHomeYearly(event)">Yearly</a>
+                </div>
+            </div>
+
+            <div id="home-monthly-section">
+                <div class="subscription-cards home-subscription-cards">
+                    <article class="subscription-card">
+                        <h3>Basic Plan</h3>
+                        <p>Enjoy an extensive library of movies and shows with streaming on one device.</p>
+                        <div class="price">$9.99 <small>/month</small></div>
+                        <div class="subscription-actions">
+                            <button class="btn btn-secondary">Start Free Trial</button>
+                            <button class="btn btn-primary">Choose Plan</button>
+                        </div>
+                    </article>
+                    <article class="subscription-card">
+                        <h3>Standard Plan <span class="tag">Popular</span></h3>
+                        <p>Unlock more new releases, better quality, and access on multiple devices.</p>
+                        <div class="price">$12.99 <small>/month</small></div>
+                        <div class="subscription-actions">
+                            <button class="btn btn-secondary">Start Free Trial</button>
+                            <button class="btn btn-primary">Choose Plan</button>
+                        </div>
+                    </article>
+                    <article class="subscription-card">
+                        <h3>Premium Plan</h3>
+                        <p>Get the full StreamVibe experience with top quality and offline viewing features.</p>
+                        <div class="price">$16.99 <small>/month</small></div>
+                        <div class="subscription-actions">
+                            <button class="btn btn-secondary">Start Free Trial</button>
+                            <button class="btn btn-primary">Choose Plan</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div id="home-yearly-section" style="display:none;">
+                <div class="subscription-cards home-subscription-cards">
+                    <article class="subscription-card">
+                        <h3>Basic Plan</h3>
+                        <p>Enjoy an extensive library of movies and shows with streaming on one device.</p>
+                        <div class="price">$99.99 <small>/year</small></div>
+                        <div class="subscription-actions">
+                            <button class="btn btn-secondary">Start Free Trial</button>
+                            <button class="btn btn-primary">Choose Plan</button>
+                        </div>
+                    </article>
+                    <article class="subscription-card">
+                        <h3>Standard Plan <span class="tag">Popular</span></h3>
+                        <p>Unlock more new releases, better quality, and access on multiple devices.</p>
+                        <div class="price">$129.99 <small>/year</small></div>
+                        <div class="subscription-actions">
+                            <button class="btn btn-secondary">Start Free Trial</button>
+                            <button class="btn btn-primary">Choose Plan</button>
+                        </div>
+                    </article>
+                    <article class="subscription-card">
+                        <h3>Premium Plan</h3>
+                        <p>Get the full StreamVibe experience with top quality and offline viewing features.</p>
+                        <div class="price">$169.99 <small>/year</small></div>
+                        <div class="subscription-actions">
+                            <button class="btn btn-secondary">Start Free Trial</button>
+                            <button class="btn btn-primary">Choose Plan</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta trial-panorama home-cta animate__animated animate__backInRight delay-03">
+            <div>
+                <h3>Start your free trial today!</h3>
+                <p>This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.</p>
+            </div>
+            <button class="btn btn-primary">Start a Free Trial</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-top">
+            <div>
+                <h6>Home</h6><a href="#">Categories</a><a href="#">Devices</a><a href="#">Pricing</a><a href="#">FAQ</a>
+            </div>
+            <div>
+                <h6>Movies</h6><a href="./pages/moves page.html">Movies Page</a><a href="#">Genres</a><a href="#">Trending</a><a href="#">New
+                    Release</a><a href="#">Popular</a>
+            </div>
+            <div>
+                <h6>Shows</h6><a href="./pages/shows page.html">Shows Page</a><a href="#">Genres</a><a href="#">Trending</a><a href="#">New
+                    Release</a><a href="#">Popular</a>
+            </div>
+            <div>
+                <h6>Support</h6><a href="./pages/Support.html">Contact Us</a>
+            </div>
+            <div>
+                <h6>Subscription</h6><a href="./pages/Subscription.html">Plans</a><a href="#">Features</a>
+            </div>
+            <div>
+                <h6>Connect With Us</h6>
+                <div class="socials">
+                    <a href="#"><img src="./photo/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="./photo/discord.svg" alt="Discord"></a>
+                    <a href="#"><img src="./photo/nstagram.svg" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy;2023 StreamVibe, All Rights Reserved</p>
+            <p>Terms of Use &nbsp;&nbsp; Privacy Policy &nbsp;&nbsp; Cookie Policy</p>
+        </div>
+    </footer>
+
+    <div id="noti-overlay">
+        <div id="welcome-notification">
+            <div class="notiglow"></div>
+            <div class="notiborderglow"></div>
+            <div class="notititle">Welcome To Movies&Shows Project</div>
+            <div class="notibody">With Mohamed Ali all projects<ul>will be perfect</ul> </div>
+            <div class="noti-footer">
+                <span class="noti-click">Click Here</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
