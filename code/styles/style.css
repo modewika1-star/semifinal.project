@@ -324,7 +324,14 @@
  .nav-icons {
      justify-self: end;
      display: flex;
+     align-items: center;
      gap: 10px;
+ }
+
+ .date-now {
+     white-space: nowrap;
+     color: #fff;
+     font-size: 0.85rem;
  }
 
  .icon-btn {
