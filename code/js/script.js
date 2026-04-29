@@ -1,3 +1,8 @@
+let dateText = document.querySelector(".date-now");
+window.setInterval(() => {
+    dateText.innerText = new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true });
+}, 1000);
+
 const menuToggle = document.getElementById('menu-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
 
