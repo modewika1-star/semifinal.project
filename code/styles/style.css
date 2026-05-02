@@ -1044,9 +1044,7 @@
  }
 
  .cta {
-     background:
-         linear-gradient(90deg, rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.36)),
-         url('../photo/Background Images.png') center/cover;
+     background: none;
      border: 1px solid var(--line);
      border-radius: 14px;
      padding: 28px;
@@ -1055,6 +1053,33 @@
      align-items: center;
      gap: 12px;
      margin-top: 22px;
+     position: relative;
+     overflow: hidden;
+ }
+
+ .cta::before {
+     content: '';
+     position: absolute;
+     inset: 0;
+     background: linear-gradient(90deg, rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.36));
+     z-index: 1;
+     pointer-events: none;
+ }
+
+ .cta-bg {
+     position: absolute;
+     inset: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     object-position: center;
+     z-index: 0;
+ }
+
+ .cta > div,
+ .cta > button {
+     position: relative;
+     z-index: 2;
  }
 
  .cta h3 {
@@ -1421,30 +1446,33 @@
 }
 
 .home-page .cta,
-.movies-page .cta {
-    border-color: transparent;
-}
-
-.home-page .cta {
+.movies-page .cta,
+.support-page .cta,
+.subscription-page .cta {
     border-color: transparent;
     padding: 48px 56px;
     min-height: 130px;
 }
 
-.home-page .cta .btn-primary {
+.home-page .cta .btn-primary,
+.movies-page .cta .btn-primary,
+.support-page .cta .btn-primary,
+.subscription-page .cta .btn-primary {
     background: var(--brand);
     white-space: nowrap;
     flex-shrink: 0;
 }
 
-.home-page .cta .btn-primary:hover {
+.home-page .cta .btn-primary:hover,
+.movies-page .cta .btn-primary:hover,
+.support-page .cta .btn-primary:hover,
+.subscription-page .cta .btn-primary:hover {
     background: var(--brand-2);
     box-shadow: 0 6px 20px rgba(var(--brand-rgb), 0.35);
 }
 
 .home-page .hero {
     min-height: 640px;
-    background: url('../photo/background.png') center/cover no-repeat;
     position: relative;
     /* break out of container so hero spans full viewport width */
     width: 100vw;
@@ -1464,7 +1492,6 @@
 }
 
 .movies-page .hero {
-    background: url('../photo/avangers.png') center/cover no-repeat;
     min-height: 100vh;
     height: 100vh;
     max-height: none;
@@ -1748,8 +1775,8 @@ select {
 .movie-hero {
     position: relative;
     width: 100%;
-    height: 58vh;
-    min-height: 380px;
+    height: 100vh;
+    min-height: 500px;
     overflow: hidden;
 }
 
@@ -1757,7 +1784,7 @@ select {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center 20%;
+    object-position: center center;
     display: block;
 }
 
@@ -1822,6 +1849,23 @@ select {
 .hero-icon-btn:hover {
     background: rgba(255, 255, 255, 0.18);
     border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Uiverse plus button inside hero-icon-btn */
+.hero-icon-btn svg {
+    stroke: #ffffff;
+    fill: none;
+    transition: stroke 0.3s, fill 0.3s, transform 0.3s;
+}
+.hero-icon-btn:hover svg {
+    stroke: #fff;
+    fill: rgba(255, 255, 255, 0.12);
+    transform: rotate(90deg);
+}
+.hero-icon-btn:active svg {
+    stroke: rgba(255, 255, 255, 0.8);
+    fill: rgba(255, 255, 255, 0.25);
+    transition: none;
 }
 
 /* ── Two-column detail layout ── */
