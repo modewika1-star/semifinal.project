@@ -46,16 +46,21 @@
 
     <main>
         <section class="movie-hero animate__animated animate__backInLeft">
-            <img class="hero-bg" src="../photo/stranger things.png" alt="Stranger Things">
+            <video class="hero-bg" id="hero-video" src="../photo/stranger-things-5-trailer.mp4" autoplay loop muted playsinline></video>
             <div class="movie-hero-content">
                 <h1>Stranger Things</h1>
                 <p class="hero-sub">When a young boy vanishes, a small town uncovers a mystery involving secret
                     experiments, terrifying supernatural forces and one strange little girl.</p>
                 <div class="hero-actions">
-                    <button class="btn btn-primary hero-play-btn">Play Now</button>
-                    <button class="hero-icon-btn" title="Add to list"><i class="fa-solid fa-plus"></i></button>
+                    <button class="btn btn-primary hero-play-btn" id="hero-play-btn">Play Now</button>
+                    <button title="Add to list" class="hero-icon-btn group cursor-pointer outline-none hover:rotate-90 duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28px" height="28px" viewBox="0 0 24 24" stroke="#ffffff" fill="none">
+                            <path d="M8 12H16" stroke-width="2"></path>
+                            <path d="M12 16V8" stroke-width="2"></path>
+                        </svg>
+                    </button>
                     <button class="hero-icon-btn" title="Like"><i class="fa-solid fa-thumbs-up"></i></button>
-                    <button class="hero-icon-btn" title="Sound"><i class="fa-solid fa-volume-high"></i></button>
+                    <button class="hero-icon-btn" id="sound-btn" title="Sound"><i class="fa-solid fa-volume-xmark"></i></button>
                 </div>
             </div>
         </section>
@@ -371,13 +376,16 @@
             </div>
         </div>
 
-        <section class="cta trial-panorama animate__animated animate__backInLeft delay-03">
-            <div>
-                <h3>Start your free trial today!</h3>
-                <p>This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.</p>
-            </div>
-            <button class="btn btn-primary">Start a Free Trial</button>
-        </section>
+        <div class="container">
+            <section class="cta trial-panorama animate__animated animate__backInLeft delay-03">
+                <img class="cta-bg" src="../photo/Background Images.png" alt="">
+                <div>
+                    <h3>Start your free trial today!</h3>
+                    <p>This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.</p>
+                </div>
+                <button class="btn btn-primary">Start a Free Trial</button>
+            </section>
+        </div>
     </main>
 
     <footer>
@@ -388,12 +396,12 @@
             </div>
             <div>
                 <h6>Movies</h6>
-                <a href="moves&shows.html">Movies & Shows</a><a href="#">Genres</a><a href="#">Trending</a>
+                <a href="moves page.html">Movies page</a><a href="#">Genres</a><a href="#">Trending</a>
                 <a href="#">New Release</a><a href="#">Popular</a>
             </div>
             <div>
                 <h6>Shows</h6>
-                <a href="shows page.html">Shows</a><a href="#">Genres</a><a href="#">Trending</a>
+                <a href="shows page.html">Shows page</a><a href="#">Genres</a><a href="#">Trending</a>
                 <a href="#">New Release</a><a href="#">Popular</a>
             </div>
             <div>
