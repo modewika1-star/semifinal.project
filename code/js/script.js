@@ -1,3 +1,57 @@
+// Hero video controls — only active on moves page (guarded by #hero-video check)
+(function () {
+    const video = document.getElementById('hero-video');
+    const soundBtn = document.getElementById('sound-btn');
+    const playBtn = document.getElementById('hero-play-btn');
+
+    if (!video) return;  // exits immediately on every other page
+
+    function setSoundIcon(muted) {
+        if (!soundBtn) return;
+        const icon = soundBtn.querySelector('i');
+        if (muted) {
+            icon.className = 'fa-solid fa-volume-xmark';
+            soundBtn.title = 'Unmute';
+        } else {
+            icon.className = 'fa-solid fa-volume-high';
+            soundBtn.title = 'Mute';
+        }
+    }
+
+    // Autoplay always muted
+    video.muted = true;
+    video.play().catch(() => {});
+    setSoundIcon(true);
+
+    // Sync button label with actual play state
+    function setPlayLabel() {
+        if (!playBtn) return;
+        playBtn.textContent = video.paused ? 'Play Now' : 'Pause';
+    }
+    video.addEventListener('play', setPlayLabel);
+    video.addEventListener('pause', setPlayLabel);
+    setPlayLabel();
+
+    // Sound button only — press to unmute, press again to mute
+    if (soundBtn) {
+        soundBtn.addEventListener('click', () => {
+            video.muted = !video.muted;
+            setSoundIcon(video.muted);
+        });
+    }
+
+    // Play/Pause toggle
+    if (playBtn) {
+        playBtn.addEventListener('click', () => {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        });
+    }
+})();
+
 let dateText = document.querySelector(".date-now");
 window.setInterval(() => {
     dateText.innerText = new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true });
