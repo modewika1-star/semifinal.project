@@ -1,4 +1,7 @@
-// Hero video controls — only active on moves page (guarded by #hero-video check)
+﻿// ══════════════════════════
+// 1  Hero Video Controls
+//    (movies page only — exits immediately on all other pages)
+// ══════════════════════════
 (function () {
     const video = document.getElementById('hero-video');
     const soundBtn = document.getElementById('sound-btn');
@@ -52,11 +55,19 @@
     }
 })();
 
+
+// ══════════════════════════
+// 2  Live Clock
+// ══════════════════════════
 let dateText = document.querySelector(".date-now");
 window.setInterval(() => {
     dateText.innerText = new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true });
 }, 1000);
 
+
+// ══════════════════════════
+// 3  Mobile Menu
+// ══════════════════════════
 const menuToggle = document.getElementById('menu-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
 
@@ -72,6 +83,10 @@ if (menuToggle && mobileMenu) {
     });
 }
 
+
+// ══════════════════════════
+// 4  FAQ Accordion
+// ══════════════════════════
 document.querySelectorAll('.faq-item').forEach(item => {
     item.addEventListener('click', () => {
         const active = item.classList.contains('active');
@@ -86,6 +101,11 @@ document.querySelectorAll('.faq-item').forEach(item => {
     });
 });
 
+
+// ══════════════════════════
+// 5  Plan Toggle
+//    (home page + subscription page monthly / yearly)
+// ══════════════════════════
 function showHomeMonthly(event) {
     if (event) event.preventDefault();
     document.getElementById('home-monthly-section').style.display = 'block';
@@ -118,11 +138,21 @@ function showYearly(event) {
     document.querySelectorAll('.plan-toggle a')[1].classList.add('active');
 }
 
+
+// ══════════════════════════
+// 6  Season Accordion
+//    (shows page)
+// ══════════════════════════
 function toggleSeason(id) {
     const group = document.getElementById(id);
     if (group) group.classList.toggle('open');
 }
 
+
+// ══════════════════════════
+// 7  Notification Overlay
+//    (welcome popup)
+// ══════════════════════════
 (function () {
     const overlay = document.getElementById('noti-overlay');
     if (!overlay) return;
