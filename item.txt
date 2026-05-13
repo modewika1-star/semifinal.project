@@ -1,0 +1,71 @@
+﻿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  style.css  (2813 lines)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Line 1            — font import ==> استيراد الخط
+Lines 4–26        — 1  CSS Variables ==> متغيرات CSS
+Lines 27–37       — 2  Subscription Colors ==> ألوان الاشتراك
+Lines 38–48       — 3  Support Colors ==> ألوان الدعم
+Lines 49–221      — 4  Support Components ==> مكونات صفحة الدعم
+                         (hero, collage, label, faq, form grid, checkbox)
+Lines 222–268     — 5  Global Reset ==> إعادة الضبط العام
+Lines 269–339     — 6  Header & Logo ==> الترويسة والشعار
+Lines 340–439     — 7  Navbar ==> شريط التنقل
+Lines 440–506     — 8  Nav Icons ==> أيقونات التنقل
+Lines 507–565     — 9  Hamburger ==> زر القائمة (هامبرغر)
+Lines 566–603     — 10 Mobile Menu ==> القائمة على الجوال
+Lines 604–659     — 11 Layout & Section Head ==> التخطيط وعنوان القسم
+Lines 660–744     — 12 Hero Banner ==> الصورة الرئيسية
+Lines 745–825     — 13 Buttons ==> الأزرار
+Lines 826–929     — 14 Cards ==> البطاقات
+Lines 930–975     — 15 Devices Grid ==> شبكة الأجهزة
+Lines 976–1034    — 16 FAQ ==> الأسئلة الشائعة
+Lines 1035–1169   — 17 Subscription Cards ==> بطاقات الاشتراك
+Lines 1170–1202   — 18 Table ==> الجدول
+Lines 1203–1266   — 19 CTA Banner ==> لافتة الدعوة للعمل
+Lines 1267–1344   — 20 Footer ==> التذييل
+Lines 1345–1413   — 21 Subscription Overrides ==> تخصيصات صفحة الاشتراك
+Lines 1414–1427   — 22 Accessibility ==> إمكانية الوصول
+Lines 1428–1579   — 23 Home & Movies Styles ==> أنماط الرئيسية والأفلام
+                         break out of container so hero spans full viewport width
+                         ==> تمديد الصورة الرئيسية لتملأ عرض الشاشة كاملاً
+                         Home page: keep all sections away from the edges
+                         ==> الصفحة الرئيسية: إبقاء الأقسام بعيدة عن الحواف
+Lines 1580–1607   — 24 UI Polish ==> تحسينات الواجهة
+Lines 1608–2040   — 25 Movie Detail ==> صفحة تفاصيل الفيلم
+                         Uiverse plus button inside hero-icon-btn ==> زر Uiverse داخل أيقونة الصورة الرئيسية
+                         Two-column detail layout ==> تخطيط عمودين للتفاصيل
+                         Section label ==> تسمية القسم
+                         Description ==> الوصف
+                         Cast ==> طاقم التمثيل
+                         Reviews ==> التقييمات
+                         Sidebar ==> الشريط الجانبي
+                         Budget tier ==> مستوى الميزانية
+                         Language & genre chips ==> شرائح اللغة والنوع
+                         Person rows (director / music) ==> صفوف الأشخاص (المخرج / الموسيقى)
+                         CTA with thumbnail strip ==> دعوة للعمل مع شريط مصغرات
+Lines 2041–2218   — 26 Shows Detail ==> صفحة تفاصيل المسلسل
+                         Fan count block ==> كتلة عدد المعجبين
+Lines 2219–2340   — 27 Notification Overlay ==> نافذة الإشعار
+                         Welcome Notification Card ==> بطاقة الترحيب
+Lines 2341–2355   — 28 Utilities & Helpers ==> الأدوات المساعدة
+                         Detail Page: Hero play button (small variant) ==> زر التشغيل الصغير
+                         Detail Page: Cast navigation arrows row ==> أسهم التنقل في طاقم التمثيل
+                         Detail Page: Section label used inline (no bottom margin) ==> تسمية مضمّنة بلا هامش سفلي
+                         Subscription Page: Layout helpers ==> مساعدات التخطيط في صفحة الاشتراك
+Lines 2356–2813   — 29 Responsive Breakpoints ==> نقاط الاستجابة
+                         xl  : >=1200px      — large desktop (base) ==> سطح مكتب كبير (القاعدة)
+                         lg  : 992px–1199px  — laptop / small desktop ==> لابتوب / سطح مكتب صغير
+                         md  : 768px–991px   — tablet ==> تابلت
+                         sm  : 576px–767px   — large phone / small tablet ==> جوال كبير / تابلت صغير
+                         xs  : <=575px       — phone ==> جوال
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  script.js  (181 lines)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Lines 1–58        — 1  Hero Video Controls  (movies page only) ==> التحكم في فيديو البانر (صفحة الأفلام فقط)
+Lines 59–67       — 2  Live Clock ==> الساعة المباشرة
+Lines 68–86       — 3  Mobile Menu ==> القائمة على الجوال
+Lines 87–104      — 4  FAQ Accordion ==> قائمة الأسئلة الشائعة القابلة للطي
+Lines 105–141     — 5  Plan Toggle  (home + subscription page monthly/yearly) ==> تبديل الخطة (شهري / سنوي)
+Lines 142–151     — 6  Season Accordion  (shows page) ==> قائمة المواسم القابلة للطي (صفحة المسلسلات)
+Lines 152–181     — 7  Notification Overlay  (welcome popup) ==> نافذة الإشعار (رسالة الترحيب)
